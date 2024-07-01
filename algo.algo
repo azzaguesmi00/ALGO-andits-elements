@@ -1,0 +1,30 @@
+
+END_WHILE
+
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    LengthCounter = 0
+    WordCounter = 0
+    VowelCounter = 0
+    Word = FALSE 
+
+     PRINT "Enter a sentence: "
+
+    while true do 
+        char = read char
+        if char == '.' then
+            BREAK
+        end if
+        LengthCounter = LengthCounter + 1
+         IF char== 'a' OR char == 'e' OR char== 'i' OR char == 'o' OR char == 'u' OR 
+           char == 'A' OR char == 'E' OR char== 'I' OR char == 'O' OR char == 'U' THEN
+            VowelCounter = VowelCounter + 1
+        END IF
+
+REPEAT
+    set_instructions
+UNTIL (condition)
+
+
